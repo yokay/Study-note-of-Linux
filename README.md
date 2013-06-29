@@ -6,7 +6,8 @@
 在[github](https://www.github.com)上 `Create a new repo` 后，我直接 `clone` 到了桌面，然后将文件添加到各个文件夹中。由于没有初始化，出现很多问题。所以做了以下事情：  
 
 	1. ssh-keygen -t rsa -C "xxx(github账号)"
-	2. 登陆github账户，点击 ***Accout Settings > SSH Public Keys >Add SSH key **，然后将 ` ~/.ssh/id_ras.pub ` 中的SSH key复制进去。
+	2. 登陆github账户，点击 ***Accout Settings > SSH Public Keys >Add SSH key **，
+	   然后将 ` ~/.ssh/id_ras.pub ` 中的SSH key复制进去。
 	3. ssh -T git@github.com 测试是否连接到github服务器上。
 	4. git config --global user.name 'xxx'
 	5. git config --global user.email xxx@xxx.com
@@ -15,3 +16,17 @@
 	8. git push -u origin master 
 
 至此，push成功！
+
+
+之后又建立了一个新库，若按上面步骤ssh-key会被覆盖。直接进入第7步，出现错误:  
+` fatal:remote origin already exists.`    
+解决办法:  
+` git remote rm origin `  
+再执行第7步  
+接着  
+` git push origin master `  
+若出现错误:  
+` error:failed to push som refs to .... `  
+` git pull origin master `  
+
+
