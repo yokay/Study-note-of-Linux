@@ -10,16 +10,17 @@
 int main(void)
 {
 	int fd;
-
+	/* 打开文件先 */
 	fd = open("hello",O_RDWR | O_CREAT, 0644);
 	if (fd < 0)
 	{
 		printf("Open file error\n");
 		exit(1);
 	}
-
+	/* 给文件上写入锁 */
 	lock_set(fd, F_WRLCK);
-	getchar();
+	getchar();	//输入任意字符后
+	/* 解锁 */
 	lock_set(fd, F_UNLCK);
 	getchar();
 	close(fd);

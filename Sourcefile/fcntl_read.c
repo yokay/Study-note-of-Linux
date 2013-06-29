@@ -15,8 +15,10 @@ int main(void)
 		printf("Open file error\n");
 		exit(1);
 	}
+	/* 给文件上读取锁 */
 	lock_set(fd, F_RDLCK);
-	getchar();
+	getchar();	//输入任意字符后
+	/* 解锁 */
 	lock_set(fd, F_UNLCK);
 	getchar();
 	close(fd);
