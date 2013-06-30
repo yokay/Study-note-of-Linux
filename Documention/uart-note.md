@@ -36,4 +36,172 @@ termios结构中的c_lflag设置ICANNON标志定义,默认为规范。
 	termios_p->c_cflag &= ~(CSIZE | PARENB);
 	termios_p->c_cflag |= CS8;
 
+#### c_cflag
+---
 
+	B[xxx]	xxx波特率。如B115200表示115200波特率
+	EXTA	外部时钟频率
+	EXTA	外部时钟频率
+	CSIZE	数据位的位掩码
+	CS5		5个数据位
+	CS6		6个数据位
+	CS7		7个数据位
+	CS8		8个数据位
+	CSTOPB	2个停止位，不设为1个停止位
+	CREAD	接收使能
+	PARENB	校验位使能
+	PARODD	使用奇校验，不设使用偶校验
+	HUPCL	最后关闭时挂线，放弃DTR
+	CLOCAL	本地连接，不改变端口所有者
+	CRTSCTS	硬件流控
+
+#### c_iflag
+---
+
+	INPCK	奇偶校验使能
+	IGNPAR	忽略奇偶校验错误
+	PARMRK	奇偶校验错误掩码
+	ISTRIP	裁减掉第8位比特
+	IXON	启动输出软件流控
+	IXOFF	启动输入软件流控
+	IXANY	输入任意字符可以重新启动输出，默认为输入起始字符才重启输出
+	IGNBRK	忽略输入终止条件
+	BRKINT	当检测到输入终止条件时发送SIGINT信号
+	INLCR	将接收到的NL(换行符)转换为CR(回车符)
+	INGCR	忽略接收到的CR
+	ICRNL	将接收到的CR转换为NL
+	IUCLC	将接收到的大写字符映射为小写字符
+	IMAXBEL	当输入队列满时响铃
+
+#### c_oflag
+---
+
+	OPOST	启动输出处理功能，如果不设置则其他标志被忽略
+	OLCUC	将输出中的大写字符转换成小写字符
+	ONLCR	将输出中的NL转换成CR
+	ONOCR	若当前列号为0，则不输出CR
+	OCRNL	将输出中的CR转换成NL
+	ONLRET	不输出CR
+	OFILL	发送填充字符以提供延时
+	OFDEL	填充字符为DEL字符，若不设置则为NULL字符
+	NLDLY	换行延时掩码
+	CRDLY	回车延时掩码
+	TABDLY	制表符延时掩码
+	BSDLY	水平退格符延时掩码
+	VTDLY	垂直退格符延时掩码
+	FFDLY	换页符延时掩码
+
+#### c_lflag
+---
+
+	ISIG	若收到信号字符(INTR、QUIT等)，则会产生相应的信号
+	ICANON	启用规范模式
+	ECHO	启动本地回显功能
+	ECHOE	若设置ICANON，则允许退格操作
+	ECHOK	若设置ICANON，则KILL字符会删除当前行
+	ECHONL	若设置ICANON，则允许回显换行符
+	ECHOCTL	若设置ECHO，则控制字符(制表符、换行符等)会显示成^X，其中的X的ASCII码等于给相应控制字符的ASCII码加上0x40。如退格字符(0x08)会显示成"^H"('H'为0x48)
+	ECHOPRT	若设置ICANON和ECHO，删除字符，同时显示删除的字符
+	ECHOKE	若设置ICANON，回显KILL时将删除一行中的每个字符
+	NOFLSH	当接收到INTR、QUIT和SUSP控制字符时，会清空输入和输出队列。若设置该标志，则所有的队列不会别清空
+	TOSTOP	向试图写控制端的后台进程组发送SIGTTOU信号
+	IEXTEN	启用输入处理功能
+
+#### c_cc
+---
+
+	VINTR	中断控制字符，CTRL+C
+	VQUIT	退出操作符，CTRL+Z
+	VERASE	删除操作符，Backspace
+	VKILL	删除行符，CTRL+U
+	VEOF	文件结尾符，CTRL+D
+	VEOL	附加行结尾符，CR(回车符)
+	VEOL2	第二行结尾符，LF(\n)
+	VMIN	指定最少读取的字节数
+	VTIME	指定读取的每个字符间的超时时间
+	
+
+
+###1. 保存原先串口配置
+---
+使用tcgetattr(fd,&old_cfg)保存原先串口的配置，将fd指向的终端配置参数保存于termios结构变量old_cfg中。若调用成功返回0，否则返回-1(下面的tcgetattr、cfmakeraw、cfsetispeed等)。
+
+	if (tcgetattr(fd,&old_cfg) !=0 )
+	{
+		perror("tcgetattr error");
+		return -1;
+	}
+
+###2. 激活
+---
+
+	newtio.c_cflag |= CLOCAL | CREAD;	//激活本地连接和接收使能
+
+若要设置为原始模式。
+
+	cfmakeraw(&new_cfg);
+
+###3. 设置波特率
+---
+
+	cfsetispeed(&new_cfg, B9600);	//设置输入波特率
+	cfsetospeed(&new_cfg, B9600);	//设置输出波特率
+
+###4. 设置字符大小
+---
+
+	new_cfg.c_cflag &= ~CSIZE;	//清楚数据位中的位掩码
+	new_cfg.c_cflag |= CS8;		//8位
+
+###5. 设置奇偶校验位
+---
+
+	new_cfg.c_cflag |= (PARODD | PARENB);	//使能奇校验
+	new_cfg.c_cflag |= INPCK;
+
+	new_cfg.c_cflag |= PARENB;
+	new_cfg.c_cflag &= ~PARODD;		//清楚奇校验
+	new_cfg.c_cflag |= INPCK;
+
+###6. 设置停止位
+---
+
+	new_cfg.c_cflag &= ~CSTOPB;		//设置1个停止位
+	new_cfg.c_cflag |= CSTOPB;		//设置2个停止位
+
+###7. 设置最少字符和等待时间
+---
+
+	new_cfg.c_cc[VTIME] = 0;	//可以设置其它的，都设为0表示read()立即返回
+	new_cfg.c_cc[VMIN] = 0;
+
+###8. 清楚串口缓冲
+---
+
+串口在重新设置后，要对当前串口设备进行适当的处理。使用tcdrain()、tcflow()、tcflush()等处理当前串口缓冲中的数据。
+
+	int tcdrain(int fd);	//使程序阻塞，直到输出缓冲区的数据全部发送完毕
+	int tcflow(int fd, int action);		//用于暂停或重新开始输出
+	int tcflush(int fd, int queue_selector);	//用于清空输入/输出缓冲区
+									|
+									|---> TCIFLUSH  : 刷新输入队列，清空缓冲区
+										  TCOFLUSH  : 刷新输出队列，清空缓冲区
+										  TCIOFLUSH : 刷新输入输出队列，清空缓冲区
+
+	tcflush(fd, TCIFLUSH);
+
+###9. 激活配置
+---
+
+	tcsetattr(int fd, int optional_actions, const struct termios *termios_p);
+								|									  |
+								|									  |---> termios类型的新配置变量
+								|---> TCSANOW   : 配置的修改立即生效
+									  TCSDRAIN  ：所有数据传输完后生效 
+									  TCSAFLUSH : 清空输入输出缓冲区后生效
+
+	if ((tcsetattr(fd, TCSANOW, &new_cfg)) != 0)
+	{
+		perror("tcsetattr error");
+		return -1;
+	}
