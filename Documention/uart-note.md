@@ -150,7 +150,7 @@ termios结构中的c_lflag设置ICANNON标志定义,默认为规范。
 ###4. 设置字符大小
 ---
 
-	new_cfg.c_cflag &= ~CSIZE;	//清楚数据位中的位掩码
+	new_cfg.c_cflag &= ~CSIZE;	//清除数据位中的位掩码
 	new_cfg.c_cflag |= CS8;		//8位
 
 ###5. 设置奇偶校验位
@@ -160,7 +160,7 @@ termios结构中的c_lflag设置ICANNON标志定义,默认为规范。
 	new_cfg.c_cflag |= INPCK;
 
 	new_cfg.c_cflag |= PARENB;
-	new_cfg.c_cflag &= ~PARODD;		//清楚奇校验
+	new_cfg.c_cflag &= ~PARODD;		//清除奇校验
 	new_cfg.c_cflag |= INPCK;
 
 ###6. 设置停止位
@@ -175,7 +175,7 @@ termios结构中的c_lflag设置ICANNON标志定义,默认为规范。
 	new_cfg.c_cc[VTIME] = 0;	//可以设置其它的，都设为0表示read()立即返回
 	new_cfg.c_cc[VMIN] = 0;
 
-###8. 清楚串口缓冲
+###8. 清除串口缓冲
 ---
 
 串口在重新设置后，要对当前串口设备进行适当的处理。使用tcdrain()、tcflow()、tcflush()等处理当前串口缓冲中的数据。
