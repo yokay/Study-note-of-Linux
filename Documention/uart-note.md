@@ -197,8 +197,8 @@ termios结构中的c_lflag设置ICANNON标志定义,默认为规范。
 								|									  |
 								|									  |---> termios类型的新配置变量
 								|---> TCSANOW   : 配置的修改立即生效
-									  TCSDRAIN  ：所有数据传输完后生效 
-									  TCSAFLUSH : 清空输入输出缓冲区后生效
+									  TCSDRAIN  ：配置在所有数据传输完后生效 
+									  TCSAFLUSH : 配置在清空输入输出缓冲区后生效
 
 	if ((tcsetattr(fd, TCSANOW, &new_cfg)) != 0)
 	{

@@ -14,13 +14,13 @@
 	cmd:
 	 |
 	 |---> F_DUPFD:复制文件描述符
-	 	  F_GETFD:获得fd的close-on-exec标志，若标志为设置，则文件经过exec()函数后依然保持打开状态
-		  F_SETFD:设置close-on-exec标志，该标志由参赛arg的FD_CLOEXEC位决定
-		  F_GETFL:得到open设置标志
-		  F_SETFL:改变open设置标志
-		  F_GETLK:根据lock参数值，决定是否文件上锁
-		  F_SETLK:设置lock参数值的文件锁
-		  F_SETLKW:W表示wait，在无法获取琐时，进入睡眠状态，当获取锁或捕捉到信号时会返回
+	 	   F_GETFD:获得fd的close-on-exec标志，若标志为设置，则文件经过exec()函数后依然保持打开状态
+		   F_SETFD:设置close-on-exec标志，该标志由参赛arg的FD_CLOEXEC位决定
+		   F_GETFL:得到open设置标志
+		   F_SETFL:改变open设置标志
+		   F_GETLK:根据lock参数值，决定是否文件上锁
+		   F_SETLK:设置lock参数值的文件锁
+		   F_SETLKW:W表示wait，在无法获取琐时，进入睡眠状态，当获取锁或捕捉到信号时会返回
 
 	lock:结构为flock，设置读取锁和写入锁的具体状态
 				 |
