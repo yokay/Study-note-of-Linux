@@ -205,3 +205,56 @@ termios结构中的c_lflag设置ICANNON标志定义,默认为规范。
 		perror("tcsetattr error");
 		return -1;
 	}
+
+####1.打开串口
+---
+
+	fd = open("/dev/ttyS0", O_RDWR | O_NOCTTY | O_NDELAY);	
+	/*
+	打开串口为可读可写，O_NOCTTY表示不会打开在控制终端，O_NDELAY忽略DCD信号
+	*/
+	fcntl(fd, F_SETFL, 0);	//恢复串口为阻塞状态
+	isatty(STDIN_FILENO);	//确认串口是否正确打开。测试fd是否连接到终端设备
+
+	/* 打开串口的完整函数 */
+	int open_port(int com_port)
+	{
+		int fd;
+	#if (COM_TYPE == GNR_COM)	/* 使用普通串口 */
+		char *dev[] = {"/dev/ttyS0", "/dev/ttuS1", "/dev/ttyS2"};
+	#else	/* 使用USB转串口 */
+		char *dev[] = {"/dev/ttyUSB0", "/dev/ttuUSB1", "/dev/ttyUSB2"};
+	#endif
+		
+		if ((com_port < 0) || (com_port > MAX_COM_NUM))
+		{
+			return -1;
+		}
+	/* 打开串口 */
+		fd = open(dev[com_port-1], O_RDWR | O_NOCTTY | O_NDELAY);
+		if (fd < 0)
+		{
+			perror("Open serial port ERROR!");
+			return -1;
+		}
+
+		/* 恢复串口为阻塞状态 */
+		if (fcntl(fd, F_SETFL, 0) < 0)
+		{
+			perror("fcntl F_SETFL ERROR!\n");
+		}
+
+		/* 测试是否为终端设备 */
+		if (isatty(STDIN_FILENO) == 0)
+		{
+			perror("Standard input is not a terminal device!");
+		}
+
+		return fd;
+	}
+
+####2.读写串口
+---
+
+	write(fd, buff, strlen(buff));
+	read(fd, buff, BUFFEN_SIZE);
