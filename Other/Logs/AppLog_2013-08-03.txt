@@ -83,3 +83,24 @@ Log opened on 2013/08/03 15:39:00 (UTC+8:00)
 15:40:38 [7172] 0% Session terminated normally, elapsed time: 9s
 15:40:38 [7172] 0% * sent: 1.0KB, received: 162KB
 15:40:38 [7172] 0% * 8s (80%) spent in EDAM RPC
+16:10:38 [7172] 0% Connecting to www.evernote.com
+16:10:38 [7172] 0% * loaded updateCount: 11
+16:10:39 [7172] 0% Usage Metrics: sessionCount=0
+16:10:39 [7172] 0% Client is up to date with the server, updateCount=11
+16:10:39 [7172] 0% * saved updateCount: 11
+16:10:39 [7172] 0% Updating server items
+16:10:39 [7172] 100% Updating server note "开始使用", resource count: 8
+16:10:39 [7172] 100% * guid={89a7b871-fdac-473d-98be-cd749140a6c9}
+16:10:41 [7172] 100% * updateCount: 11 --> 12
+16:10:41 [7172] 100% * updateCount: 12 --> 13
+16:10:41 [7172] 100% * updateCount: 13 --> 14
+16:10:41 [7172] 100% * updateCount: 14 --> 15
+16:10:41 [7172] 100% * updateCount: 15 --> 16
+16:10:41 [7172] 100% * updateCount: 16 --> 17
+16:10:41 [7172] 100% * updateCount: 17 --> 18
+16:10:41 [7172] 100% * updateCount: 18 --> 19
+16:10:41 [7172] 100% * updateCount: 19 --> 20
+16:10:41 [7172] 100% * saved updateCount: 20
+16:10:42 [7172] 100% Session terminated normally, elapsed time: 3s
+16:10:42 [7172] 100% * sent: 1.2KB, received: 1.7KB
+16:10:42 [7172] 100% * 3s (76%) spent in EDAM RPC

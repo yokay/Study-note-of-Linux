@@ -17,6 +17,8 @@
 
 至此，push成功！
 
+一般来说从github上从终端或者直接clone下来的库，经过以上8个过程基本上就可以建成功。如果提示![rejected]	master -> master (non-fast-forward)的话，我使用了一个比较笨的方法，就是删掉电脑上的库，重新clone下来，然后直接就可以用了。
+
 
 之后又建立了一个新库，若按上面步骤ssh-key会被覆盖。直接进入第7步，出现错误:  
 ` fatal:remote origin already exists.`    
