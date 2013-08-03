@@ -33,8 +33,12 @@
 
 这两天使用github时发现图片老是无法显示，一开始使用的链接是图片所在的文件的路径，后来发现打开图片后显示的源文件路径才是正确的。其查看方法如下图所示： 
 
-![打开图片后点击RAW](https://raw.github.com/yokay/Images/master/github-showpic01.png "打开图片后点击RAW")
-------
+**打开图片后点击RAW**  
+
+![打开图片后点击RAW](https://raw.github.com/yokay/Images/master/github-showpic01.png "打开图片后点击RAW")  
+
+**复制地址栏**  
+
 ![复制地址栏](https://raw.github.com/yokay/Images/master/github-showpic02.png "复制地址栏")  
 
 P.S:不是github.com开头，而是raw！  
