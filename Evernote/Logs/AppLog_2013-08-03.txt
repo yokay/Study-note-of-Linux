@@ -1,0 +1,172 @@
+
+Log opened on 2013/08/03 11:17:00 (UTC+8:00)
+
+11:17:00 [6776] Command line: "F:\Program Files\Evernote\Evernote\Evernote.exe" 
+11:17:00 [6776] Client info: Evernote Windows/268917; Windows/6.2.9200;
+11:17:02 [6776] Bootstrap info: Evernote (loadedBundled)
+11:17:02 [7696] Requesting bootstrap info from "app.yinxiang.com" (zh-CN)
+11:17:02 [7696] 0% Connecting to app.yinxiang.com
+11:17:02 [7696] 0% Session terminated normally, elapsed time: 0s
+11:17:02 [7696] 0% * sent: 99B, received: 582B
+11:17:02 [7696] 0% * 0s (100%) spent in EDAM RPC
+11:17:02 [7696] Bootstrap info: request to "app.yinxiang.com" returned profiles: Evernote-China,Evernote
+11:17:02 [7696] Bootstrap info: Evernote-China,Evernote[1] (loadedFresh)
+11:17:06 [6776] Opened database: C:\Users\Wee Yokay\Desktop\Study-note-of-Linux\Other\Databases\yokay886#app.yinxiang.com.exb (600KB Fixed)
+11:17:14 [6748] 0% Authenticating user "yokay886"
+11:17:14 [6748] 0% Connecting to app.yinxiang.com
+11:17:14 [6748] 0% * loaded updateCount: 4
+11:17:14 [6748] 0% Synchronizing ads
+11:17:14 [6748] 0% Reporting 12 ads, language: "zh-CN"
+11:17:14 [6748] 0% * clientProperty: [client]=[EvernoteWindows]
+11:17:14 [6748] 0% * ad id=7, impression time=0 count=0
+11:17:14 [6748] 0% * ad id=3, impression time=0 count=0
+11:17:14 [6748] 0% * ad id=8, impression time=0 count=0
+11:17:14 [6748] 0% * ad id=11, impression time=0 count=0
+11:17:14 [6748] 0% * ad id=13, impression time=0 count=0
+11:17:14 [6748] 0% * ad id=2, impression time=0 count=0
+11:17:14 [6748] 0% * ad id=1, impression time=0 count=0
+11:17:14 [6748] 0% * ad id=6, impression time=0 count=0
+11:17:14 [6748] 0% * ad id=4, impression time=0 count=0
+11:17:14 [6748] 0% * ad id=10, impression time=0 count=0
+11:17:14 [6748] 0% * ad id=5, impression time=0 count=0
+11:17:14 [6748] 0% * ad id=12, impression time=0 count=0
+11:17:15 [6748] 0% Retrieving 12 ads
+11:17:15 [6748] 0% * ad id=10 size=(125x125) advertiserName="Evernote" imageUrl="https://app.yinxiang.com/prom/img/10" image/png 23.6KB destinationUrl="https://app.yinxiang.com/prom/click?i=10&u=2106064&a=evernote%20windows&v=268917" displaySeconds=120 score=0.967604 openInTrunk=0
+11:17:15 [6748] 8% * ad id=1 size=(125x125) advertiserName="Evernote" imageUrl="https://app.yinxiang.com/prom/img/1" image/jpeg 15.6KB destinationUrl="https://app.yinxiang.com/prom/click?i=1&u=2106064&a=evernote%20windows&v=268917" displaySeconds=120 score=0.935293 openInTrunk=0
+11:17:15 [6748] 17% * ad id=6 size=(125x125) advertiserName="Evernote" imageUrl="https://app.yinxiang.com/prom/img/6" image/jpeg 7.5KB destinationUrl="https://app.yinxiang.com/prom/click?i=6&u=2106064&a=evernote%20windows&v=268917" displaySeconds=120 score=0.934869 openInTrunk=0
+11:17:15 [6748] 25% * ad id=11 size=(125x125) advertiserName="Evernote" imageUrl="https://app.yinxiang.com/prom/img/11" image/jpeg 10.7KB destinationUrl="https://app.yinxiang.com/prom/click?i=11&u=2106064&a=evernote%20windows&v=268917" displaySeconds=120 score=0.918539 openInTrunk=0
+11:17:15 [6748] 33% * ad id=12 size=(125x125) advertiserName="Evernote" imageUrl="https://app.yinxiang.com/prom/img/12" image/jpeg 10.7KB destinationUrl="https://app.yinxiang.com/prom/click?i=12&u=2106064&a=evernote%20windows&v=268917" displaySeconds=120 score=0.609939 openInTrunk=0
+11:17:15 [6748] 42% * ad id=2 size=(125x125) advertiserName="Evernote" imageUrl="https://app.yinxiang.com/prom/img/2" image/jpeg 14.2KB destinationUrl="https://app.yinxiang.com/prom/click?i=2&u=2106064&a=evernote%20windows&v=268917" displaySeconds=120 score=0.441229 openInTrunk=0
+11:17:15 [6748] 50% * ad id=3 size=(125x125) advertiserName="Evernote" imageUrl="https://app.yinxiang.com/prom/img/3" image/jpeg 12.8KB destinationUrl="https://app.yinxiang.com/prom/click?i=3&u=2106064&a=evernote%20windows&v=268917" displaySeconds=120 score=0.340757 openInTrunk=0
+11:17:15 [6748] 58% * ad id=7 size=(125x125) advertiserName="Evernote" imageUrl="https://app.yinxiang.com/prom/img/7" image/jpeg 8.1KB destinationUrl="https://app.yinxiang.com/prom/click?i=7&u=2106064&a=evernote%20windows&v=268917" displaySeconds=120 score=0.334959 openInTrunk=0
+11:17:15 [6748] 67% * ad id=5 size=(125x125) advertiserName="Evernote" imageUrl="https://app.yinxiang.com/prom/img/5" image/jpeg 16.4KB destinationUrl="https://app.yinxiang.com/prom/click?i=5&u=2106064&a=evernote%20windows&v=268917" displaySeconds=120 score=0.317200 openInTrunk=0
+11:17:15 [6748] 75% * ad id=8 size=(125x125) advertiserName="Evernote" imageUrl="https://app.yinxiang.com/prom/img/8" image/jpeg 23.0KB destinationUrl="https://app.yinxiang.com/prom/click?i=8&u=2106064&a=evernote%20windows&v=268917" displaySeconds=120 score=0.301715 openInTrunk=0
+11:17:15 [6748] 83% * ad id=4 size=(125x125) advertiserName="Evernote" imageUrl="https://app.yinxiang.com/prom/img/4" image/jpeg 10.8KB destinationUrl="https://app.yinxiang.com/prom/click?i=4&u=2106064&a=evernote%20windows&v=268917" displaySeconds=120 score=0.293735 openInTrunk=0
+11:17:15 [6748] 92% * ad id=13 size=(125x125) advertiserName="Evernote" imageUrl="https://app.yinxiang.com/prom/img/13" image/jpeg 13.0KB destinationUrl="https://app.yinxiang.com/prom/click?i=13&u=2106064&a=evernote%20windows&v=268917" displaySeconds=120 score=0.225645 openInTrunk=0
+11:17:15 [6748] 0% Usage Metrics: sessionCount=1
+11:17:15 [6748] 0% Client is up to date with the server, updateCount=4
+11:17:15 [6748] 0% * saved updateCount: 4
+11:17:16 [6748] 0% Session terminated normally, elapsed time: 1s
+11:17:16 [6748] 0% * sent: 618B, received: 169KB
+11:17:16 [6748] 0% * 0s (27%) spent in EDAM RPC
+11:17:46 [6748] 0% Connecting to app.yinxiang.com
+11:17:46 [6748] 0% * loaded updateCount: 4
+11:17:46 [6748] 0% Usage Metrics: sessionCount=0
+11:17:46 [6748] 0% Client is up to date with the server, updateCount=4
+11:17:46 [6748] 0% * saved updateCount: 4
+11:17:46 [6748] 0% Session terminated normally, elapsed time: 0s
+11:17:46 [6748] 0% * sent: 160B, received: 80B
+11:17:46 [6748] 0% * 0s (100%) spent in EDAM RPC
+11:18:41 [6748] 0% Connecting to app.yinxiang.com
+11:18:41 [6748] 0% * loaded updateCount: 4
+11:18:41 [6748] 0% Usage Metrics: sessionCount=0
+11:18:41 [6748] 0% Client is up to date with the server, updateCount=4
+11:18:41 [6748] 0% * saved updateCount: 4
+11:18:41 [6748] 0% Session terminated normally, elapsed time: 0s
+11:18:41 [6748] 0% * sent: 160B, received: 80B
+11:18:41 [6748] 0% * 0s (100%) spent in EDAM RPC
+11:18:43 [6748] 0% Connecting to app.yinxiang.com
+11:18:43 [6748] 0% * loaded updateCount: 4
+11:18:43 [6748] 0% Usage Metrics: sessionCount=0
+11:18:43 [6748] 0% Client is up to date with the server, updateCount=4
+11:18:43 [6748] 0% * saved updateCount: 4
+11:18:43 [6748] 0% Session terminated normally, elapsed time: 0s
+11:18:43 [6748] 0% * sent: 160B, received: 80B
+11:18:43 [6748] 0% * 0s (100%) spent in EDAM RPC
+11:19:03 [5432] Received status code 200 when accessing URL http://update.evernote.com/public/ENWin4/ReleaseNotes_4.6.7.8409_en-us.html
+
+Log opened on 2013/08/03 11:19:26 (UTC+8:00)
+
+11:19:26 [900] Command line: "F:\Program Files\Evernote\Evernote\Evernote.exe" 
+
+Log closed on 2013/08/03 11:19:26 (UTC+8:00)
+
+11:19:26 [6776] Command line: "F:\Program Files\Evernote\Evernote\Evernote.exe" 
+11:19:41 [6748] 0% Connecting to app.yinxiang.com
+11:19:41 [6748] 0% * loaded updateCount: 4
+11:19:41 [6748] 0% Usage Metrics: sessionCount=0
+11:19:41 [6748] 0% Client is up to date with the server, updateCount=4
+11:19:41 [6748] 0% * saved updateCount: 4
+11:19:41 [6748] 0% Session terminated normally, elapsed time: 0s
+11:19:41 [6748] 0% * sent: 160B, received: 80B
+11:19:41 [6748] 0% * 0s (100%) spent in EDAM RPC
+
+Log opened on 2013/08/03 11:23:18 (UTC+8:00)
+
+11:23:18 [1480] Command line: "F:\Program Files\Evernote\Evernote\Evernote.exe" "evernote:///view/2106064/s16/6529df07-e1f1-4aab-866b-c4bf92bcee8c/6529df07-e1f1-4aab-866b-c4bf92bcee8c/?currentUSN=0"
+
+Log closed on 2013/08/03 11:23:18 (UTC+8:00)
+
+11:23:19 [6776] Command line: "F:\Program Files\Evernote\Evernote\Evernote.exe" "evernote:///view/2106064/s16/6529df07-e1f1-4aab-866b-c4bf92bcee8c/6529df07-e1f1-4aab-866b-c4bf92bcee8c/?currentUSN=0"
+11:23:19 [6776] Opening note link: "evernote:///view/2106064/s16/6529df07-e1f1-4aab-866b-c4bf92bcee8c/6529df07-e1f1-4aab-866b-c4bf92bcee8c/?currentUSN=0"
+11:23:19 [6748] 0% Connecting to app.yinxiang.com
+11:23:19 [6748] 0% * loaded updateCount: 4
+11:23:19 [6748] 0% Usage Metrics: sessionCount=0
+11:23:19 [6748] 0% Client updateCount=4, server updateCount=5
+11:23:19 [6748] 0% Retrieving list of changes from the server
+11:23:19 [6748] 0% * saved 1 sync chunks, updateCount=5
+11:23:19 [6748] 0% Synchronizing 1 note
+11:23:19 [6748] 0% Creating local note "u-Boot启动分析4 - liuxizhen2009的专栏 - 博客频道...", resource count: 0
+11:23:19 [6748] 0% * guid={6529DF07-E1F1-4AAB-866B-C4BF92BCEE8C}
+11:23:19 [6748] 0% * Retrieving note data, total size=5763
+11:23:20 [6748] 100% * saved updateCount: 5
+11:23:20 [6748] 0% Session terminated normally, elapsed time: 1s
+11:23:20 [6748] 0% * sent: 646B, received: 6.7KB
+11:23:20 [6748] 0% * 0s (59%) spent in EDAM RPC
+11:24:33 [6748] 0% Connecting to app.yinxiang.com
+11:24:33 [6748] 0% * loaded updateCount: 5
+11:24:33 [6748] 0% Usage Metrics: sessionCount=0
+11:24:33 [6748] 0% Client updateCount=5, server updateCount=6
+11:24:33 [6748] 0% Retrieving list of changes from the server
+11:24:34 [6748] 0% * saved 1 sync chunks, updateCount=6
+11:24:34 [6748] 0% Synchronizing 1 note
+11:24:34 [6748] 0% Creating local note "u-Boot启动分析4 - liuxizhen2009的专栏 - 博客频道...", resource count: 0
+11:24:34 [6748] 0% * guid={66B1D9B5-E90C-4255-AEE9-E46D1B31E9FD}
+11:24:34 [6748] 0% * Retrieving note data, total size=56024
+11:24:36 [6748] 100% * saved updateCount: 6
+11:24:36 [6748] 0% Updating server items
+11:24:36 [6748] 50% Updating server note "u-Boot启动分析4 - liuxizhen2009的专栏 - 博客频道...", resource count: 0
+11:24:36 [6748] 50% * guid={6529df07-e1f1-4aab-866b-c4bf92bcee8c}
+11:24:36 [6748] 50% * updateCount: 6 --> 7
+11:24:36 [6748] 100% * saved updateCount: 7
+11:24:37 [6748] 100% Session terminated normally, elapsed time: 3s
+11:24:37 [6748] 100% * sent: 1.1KB, received: 60.3KB
+11:24:37 [6748] 100% * 3s (95%) spent in EDAM RPC
+11:25:17 [6748] 0% Connecting to app.yinxiang.com
+11:25:17 [6748] 0% * loaded updateCount: 7
+11:25:18 [6748] 0% Usage Metrics: sessionCount=0
+11:25:18 [6748] 0% Client updateCount=7, server updateCount=8
+11:25:18 [6748] 0% Retrieving list of changes from the server
+11:25:18 [6748] 0% * saved 1 sync chunks, updateCount=8
+11:25:18 [6748] 0% Synchronizing 1 note
+11:25:18 [6748] 0% Creating local note "uboot移植之命令烧写uboot，zImage.img，root - l...", resource count: 0
+11:25:18 [6748] 0% * guid={F435D88B-7102-4EC8-B97F-DF74443E804F}
+11:25:18 [6748] 0% * Retrieving note data, total size=77035
+11:25:18 [6748] 100% * saved updateCount: 8
+11:25:19 [6748] 0% Session terminated normally, elapsed time: 1s
+11:25:19 [6748] 0% * sent: 646B, received: 79.4KB
+11:25:19 [6748] 0% * 0s (34%) spent in EDAM RPC
+11:25:28 [6776] Could not locate dictionary file: F:\Program Files\Evernote\Evernote\Dict\zh-CN.dic
+11:28:01 [6748] 0% Connecting to app.yinxiang.com
+11:28:01 [6748] 0% * loaded updateCount: 8
+11:28:02 [6748] 0% Usage Metrics: sessionCount=0
+11:28:02 [6748] 0% Client updateCount=8, server updateCount=9
+11:28:02 [6748] 0% Retrieving list of changes from the server
+11:28:02 [6748] 0% * saved 1 sync chunks, updateCount=9
+11:28:02 [6748] 0% Synchronizing 1 note
+11:28:02 [6748] 0% Creating local note "uboot移植之命令烧写uboot，zImage.img，root - l...", resource count: 0
+11:28:02 [6748] 0% * guid={9C46F7E3-24E1-4AF2-BD74-46057D1F4008}
+11:28:02 [6748] 0% * Retrieving note data, total size=77035
+11:28:03 [6748] 100% * saved updateCount: 9
+11:28:03 [6748] 0% Updating server items
+11:28:03 [6748] 50% Updating server note "uboot移植之命令烧写uboot，zImage.img，root - l...", resource count: 0
+11:28:03 [6748] 50% * guid={f435d88b-7102-4ec8-b97f-df74443e804f}
+11:28:04 [6748] 50% * updateCount: 9 --> 10
+11:28:04 [6748] 100% * saved updateCount: 10
+11:28:05 [6748] 100% Session terminated normally, elapsed time: 4s
+11:28:05 [6748] 100% * sent: 79.2KB, received: 79.8KB
+11:28:05 [6748] 100% * 2s (59%) spent in EDAM RPC
+11:32:58 [6776] Closed database: C:\Users\Wee Yokay\Desktop\Study-note-of-Linux\Other\Databases\yokay886#app.yinxiang.com.exb (992KB +392KB)
+
+Log closed on 2013/08/03 11:32:58 (UTC+8:00)
+
