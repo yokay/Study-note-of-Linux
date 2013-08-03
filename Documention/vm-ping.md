@@ -23,8 +23,8 @@ vm---pc---mini2440互连
 
 首先vm的网络连接方式为`Bridged`(桥接)，然后`Edit`--->`virtual network editor...`--->将桥接的物理网卡选为自己使用的(P.S.:默认是自动的，本人默认时无法ping通主机)。  **如下图所示**  
 
-![First](https://github.com/yokay/Study-note-of-Linux/tree/master/images/vm-ping01.png)  
-![Second](https://github.com/yokay/Study-note-of-Linux/tree/master/images/vm-ping02.png)
+![First](https://github.com/yokay/Images/vm-ping01.png)  
+![Second](https://github.com/yokay/Imagesvm-ping02.png)
 
 
 
