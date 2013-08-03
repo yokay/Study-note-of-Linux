@@ -17,7 +17,15 @@
 
 至此，push成功！
 
-一般来说从github上从终端或者直接clone下来的库，经过以上8个过程基本上就可以建成功。如果提示![rejected]	master -> master (non-fast-forward)的话，我使用了一个比较笨的方法，就是删掉电脑上的库，重新clone下来，然后直接就可以用了。
+一般来说从github上从终端或者直接clone下来的库，经过以上8个过程基本上就可以建成功。如果提示![rejected]	master -> master (non-fast-forward)的话，我使用了一个比较笨的方法，就是删掉电脑上的库，重新clone下来，然后直接就可以用了。  
+
+这两天使用github时发现图片老是无法显示，一开始使用的链接是图片所在的文件的路径，后来发现打开图片后显示的源文件路径才是正确的。其查看方法如下图所示：  
+![打开图片后点击RAW](https://raw.github.com/yokay/Images/master/github-showpic01.png)
+---
+![复制地址栏](https://raw.github.com/yokay/Images/master/github-showpic02.png))
+---
+
+
 
 
 之后又建立了一个新库，若按上面步骤ssh-key会被覆盖。直接进入第7步，出现错误:  
