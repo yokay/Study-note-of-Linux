@@ -104,3 +104,52 @@ Log opened on 2013/08/03 15:39:00 (UTC+8:00)
 16:10:42 [7172] 100% Session terminated normally, elapsed time: 3s
 16:10:42 [7172] 100% * sent: 1.2KB, received: 1.7KB
 16:10:42 [7172] 100% * 3s (76%) spent in EDAM RPC
+16:40:42 [7172] 0% Connecting to www.evernote.com
+16:40:42 [7172] 0% * loaded updateCount: 20
+16:40:43 [7172] 0% Usage Metrics: sessionCount=1
+16:40:43 [7172] 0% Client is up to date with the server, updateCount=20
+16:40:43 [7172] 0% * saved updateCount: 20
+16:40:43 [7172] 0% Session terminated normally, elapsed time: 0s
+16:40:43 [7172] 0% * sent: 162B, received: 80B
+16:40:43 [7172] 0% * 0s (97%) spent in EDAM RPC
+17:10:43 [7172] 0% Connecting to www.evernote.com
+17:10:43 [7172] 0% * loaded updateCount: 20
+17:10:44 [7172] 0% Usage Metrics: sessionCount=0
+17:10:44 [7172] 0% Client is up to date with the server, updateCount=20
+17:10:44 [7172] 0% * saved updateCount: 20
+17:10:44 [7172] 0% Session terminated normally, elapsed time: 0s
+17:10:44 [7172] 0% * sent: 162B, received: 80B
+17:10:44 [7172] 0% * 0s (98%) spent in EDAM RPC
+17:40:44 [7172] 0% Connecting to www.evernote.com
+17:40:44 [7172] 0% * loaded updateCount: 20
+17:40:45 [7172] 0% Usage Metrics: sessionCount=0
+17:40:45 [7172] 0% Client is up to date with the server, updateCount=20
+17:40:45 [7172] 0% * saved updateCount: 20
+17:40:45 [7172] 0% Session terminated normally, elapsed time: 0s
+17:40:45 [7172] 0% * sent: 162B, received: 80B
+17:40:45 [7172] 0% * 1s (100%) spent in EDAM RPC
+18:10:45 [7172] 0% Connecting to www.evernote.com
+18:10:45 [7172] 0% * loaded updateCount: 20
+18:10:46 [7172] 0% Usage Metrics: sessionCount=0
+18:10:46 [7172] 0% Client is up to date with the server, updateCount=20
+18:10:46 [7172] 0% * saved updateCount: 20
+18:10:46 [7172] 0% Session terminated normally, elapsed time: 1s
+18:10:46 [7172] 0% * sent: 162B, received: 80B
+18:10:46 [7172] 0% * 0s (99%) spent in EDAM RPC
+18:40:47 [7172] 0% Connecting to www.evernote.com
+18:40:47 [7172] 0% * loaded updateCount: 20
+18:40:48 [7172] 0% Usage Metrics: sessionCount=0
+18:40:48 [7172] 0% Client is up to date with the server, updateCount=20
+18:40:48 [7172] 0% * saved updateCount: 20
+18:40:48 [7172] 0% Session terminated normally, elapsed time: 0s
+18:40:48 [7172] 0% * sent: 162B, received: 80B
+18:40:48 [7172] 0% * 0s (99%) spent in EDAM RPC
+19:10:48 [7172] 0% Connecting to www.evernote.com
+19:10:48 [7172] 0% * loaded updateCount: 20
+19:10:49 [7172] 0% Usage Metrics: sessionCount=0
+19:10:49 [7172] 0% Client is up to date with the server, updateCount=20
+19:10:49 [7172] 0% * saved updateCount: 20
+19:10:50 [7172] 0% Session terminated normally, elapsed time: 1s
+19:10:50 [7172] 0% * sent: 162B, received: 80B
+19:10:50 [7172] 0% * 0s (49%) spent in EDAM RPC
+19:14:51 [2652] APM event: PBT_APMSUSPEND

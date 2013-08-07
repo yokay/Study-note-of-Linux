@@ -1,0 +1,11 @@
+<update xmlns="http://update.evernote.com/internal/ENWin4/enwinupdate.xsd">
+  <release version="4.6.7 Public" revision="268917">
+    <executable
+                length="55080288"
+                checksum="837344d16adffc127d45949439a21572"
+                url="http://cdn1.evernote.com/win4/public/Evernote_4.6.7.8409.exe"
+                type="exe"
+                params="/qb"/>
+    <releasenotes lang="en-us" url="http://update.evernote.com/public/ENWin4/ReleaseNotes_4.6.7.8409_en-us.html"/>
+  </release>
+</update>

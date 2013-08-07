@@ -7,7 +7,7 @@ scanf通过键盘输入的参数在buffer里面。
 
 	scanf("%50s", string1);	//读取yokay
 	scanf("%50s", stirng2);	//读取beijing，而且不等主人输入便自动将buffer内容给scanf
-	scanf("%50[^\n]", stinrg2);	//读取50个字符直到换行，[^\n]表示尾部是换行
+	scanf("%50[^\n]", stinrg2);	//读取50个字符直到换行，[^\n]表示非换行。即读取50个字符后面不是换行符。
 
 ###memory的一些
 ---
