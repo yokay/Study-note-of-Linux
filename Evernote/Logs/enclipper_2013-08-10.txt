@@ -1,0 +1,6 @@
+
+Log opened on 2013/08/10 22:44:11 (UTC+8:00)
+
+22:44:13 [16196] CENCEConverter::CleanseIncomingData
+22:44:13 [16196] Processing conversion results. 1 result(s) to process
+22:44:13 [16196] CENCEConversionResult::CleanseENEXData
