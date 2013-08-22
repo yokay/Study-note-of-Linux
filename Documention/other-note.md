@@ -97,3 +97,13 @@ process1 | process2 表示将process1的standard output传输给process2的stand
 	15bit--------784--------787-----------790-------------793 
 	16bit--------785--------788-----------791-------------794 
 	24bit--------786--------789-----------792-------------795
+	
+	
+Stressing over this error? Can't fix it even though you edited the php.ini & .htaccess files? Nothing working?! Here are some things that helped me fix the "The uploaded file exceeds the upload_max_filesize directive in php.ini" error.
+
+Added these to my php.ini file:
+
+	file_uploads=1
+	upload_max_filesize=64M
+	post_max_size=64M
+	max_execution_time=-1

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Canvas Test</title>
+	<meta charset="utf-8">
+</head>
+<style>
+	canvas{
+		border:1px dashed black;
+	}
+</style>
+
+	<script>
+		window.onload=function(){
+			var canvas=document.getElementById("drawingCanvas");
+			var context=canvas.getContext("2d");
+	
+
+			var gradient = context.createLinearGradient(10,0, 100,0);
+			gradient.addColorStop(0, "megenta");
+			gradient.addColorStop(1, "yellow");
+			drawHeart(60, 50);
+			context.fillstyle = gradient;
+			context.fill();
+			context.stroke();
+
+			
+			};
+		</script>
+<body>
+	<canvas id="drawingCanvas" width="1024" height="768"></canvas>
+</body>
+</html>
