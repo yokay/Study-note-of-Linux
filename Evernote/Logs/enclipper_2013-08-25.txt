@@ -1,0 +1,10 @@
+
+Log opened on 2013/08/25 18:09:36 (UTC+8:00)
+
+18:09:38 [952] CENCEConverter::CleanseIncomingData
+18:09:38 [952] Processing conversion results. 1 result(s) to process
+18:09:38 [952] CENCEConversionResult::CleanseENEXData
+18:09:47 [952] Unable to find Evernote window.
+18:10:20 [952] CENCEConverter::CleanseIncomingData
+18:10:20 [952] Processing conversion results. 1 result(s) to process
+18:10:20 [952] CENCEConversionResult::CleanseENEXData
