@@ -1,0 +1,84 @@
+﻿U-boot        ：0x0~0x40000
+u-boot参数区  ： 0x40000~0x60000
+内核和文件系统 ：0x60000之后
+
+MACH_TYPE    1999
+
+
+设置IP地址：
+printenv
+setenv ipaddr 192.168.1.226    // 开发板IP
+setenv serverip 192.168.1.200   //Windows IP
+setenv gatewayip 192.168.1.254    // 网关
+saveenv
+
+
+（1）烧写uImage到nand Flash
+
+打开TFTP Server软件,将uImage拷贝至C:\Program Files\TftpdWin\
+
+在SecureCRT中依次输入：
+SMDK2440A>tftp 0x30008000 uImage
+SMDK2440A>nand erase 60000 500000
+SMDK2440A>nand write 0x30008000 60000 500000
+
+（2）烧写YAFFS至NandFlash
+打开TFTP Server软件,将root_qtopia.img拷贝至C:\Program Files\TftpdWin\
+
+在SecureCRT中依次输入：
+SMDK2440A>tftp 0x30008000 root_qtopia.img
+// 通过tftp server下载root_qtopia.img至开发板内存0x30008000 地址处
+
+SMDK2440A>nand erase 0x560000 $filesize
+//首先擦除Nand Flash从0x560000 开始，大小为0x3dac00的空间，来存放root_qtopia.img
+
+SMDK2440A>nand write.yaffs 0x30008000 0x560000 $filesize 
+//烧写root_qtopia.img至0x560000 开始的Nand Flash
+
+SMDK2440A> boot   //启动Linux系统
+
+
+
+通过tftp烧写u-boot.bin到nand Flash步骤：
+
+打开TFTP Server软件,将u-boot.bin拷贝至C:\Program Files\TftpdWin\
+
+在SecureCRT中依次输入：
+SMDK2440A>tftp 0x30008000 u-boot.bin
+SMDK2440A>nand erase 0 0x60000
+SMDK2440A>nand write 0x30008000 0 0x60000
+
+
+
+
+
+使用NFS挂载网络文件系统实验：
+宿主机Linux：
+1、拷贝并解压root_qtopia.tgz至/home/student目录下；
+tar xvzf root_qtopia.tgz
+
+2、设置/etc/exports配置文件，添加：
+/home/student/roo_qtopia	*(rw,sync,no_root_squash)
+设置生效并查看：
+exportfs -ra
+exportfs -v
+
+开发板设置：
+启动uboot命令行，修改引导参数：
+setenv bootargs console=ttySAC0 root=/dev/nfs nfsroot=192.168.1.202:/home/student/root_qtopia ip=192.168.1.226:192.168.1.202:192.168.1.202:255.255.255.0:sbc2440.arm9.net:eth0:off
+
+保存配置：
+saveenv
+重新启动开发板Linux系统： boot
+
+
+启动YAFFS：
+setenv bootargs noinitrd root=/dev/mtdblock3 init=/linuxrc console=ttySAC0
+
+saveenv 
+
+
+小技巧： 通过word来复制setenv bootargs noinitrd root=/dev/mtdblock3 init=/linuxrc console=ttySAC0， 可以消除换行符错误。
+
+
+console=ttySAC0,115200 root=/dev/nfs nfsroot=192.168.1.111:/opt/FriendlyARM/mini2440/rootfs_qtopia_qt4 ip=192.168.1.70:192.168.1.111:192.168.1.1:255.255.255.0:mini2440:eth0:off
