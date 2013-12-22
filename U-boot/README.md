@@ -1,3 +1,5 @@
+文中使用的是u-boot-2010.03.tar.bz2，u-boot.lds在cpu/xxx/中，有些版本在board中。
+
 ##U-boot 文件结构
 ---
 
