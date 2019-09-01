@@ -1,7 +1,7 @@
-$project
+Study-note-of-Linux
 ========
 
-$project will solve your problem of where to start with documentation,
+Study-note-of-Linux will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
 
 Look how easy it is to use:
@@ -19,15 +19,15 @@ Features
 Installation
 ------------
 
-Install $project by running:
+Install Study-note-of-Linux by running:
 
     install project
 
 Contribute
 ----------
 
-- Issue Tracker: github.com/$project/$project/issues
-- Source Code: github.com/$project/$project
+- Issue Tracker: github.com/Study-note-of-Linux/Study-note-of-Linux/issues
+- Source Code: github.com/Study-note-of-Linux/Study-note-of-Linux
 
 Support
 -------
