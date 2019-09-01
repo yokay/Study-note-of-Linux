@@ -173,7 +173,7 @@ html_static_path = ['_static']
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
   ('index', 'yokay.tex', u'yokay Documentation',
-   u'Chris Liechti', 'manual'),
+   u'Yokay', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
