@@ -172,7 +172,7 @@ html_static_path = ['_static']
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'yokay.tex', u'yokay Documentation',
+  ('index', 'yokay.tex', u'Stydy Note of Linux Documentation',
    u'Yokay', 'manual'),
 ]
 
