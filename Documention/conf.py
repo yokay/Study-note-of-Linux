@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# pySerial documentation build configuration file, created by
+# yokay documentation build configuration file, created by
 # sphinx-quickstart on Tue Jul 21 00:27:45 2009.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -37,8 +37,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'pySerial'
-copyright = u'2001-2017, Chris Liechti'
+project = u'yokay'
+copyright = u'2001-2017, Yokay'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -158,7 +158,7 @@ html_static_path = ['_static']
 #html_file_suffix = ''
 
 # Output file base name for HTML help builder.
-#htmlhelp_basename = 'pySerialdoc'
+#htmlhelp_basename = 'yokaydoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -172,13 +172,13 @@ html_static_path = ['_static']
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'pySerial.tex', u'pySerial Documentation',
+  ('index', 'yokay.tex', u'yokay Documentation',
    u'Chris Liechti', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-latex_logo = 'pyserial.png'
+latex_logo = 'yokay.png'
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
